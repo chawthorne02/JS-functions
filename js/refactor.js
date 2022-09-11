@@ -32,8 +32,9 @@
   }
   
   // Put your answer below -------------------------
-  
-  
+  const doSomethingCool = function() {
+    console.log("Something Cool!");
+  }
   // -----------------------------------------------
   
   //////////////////////////////////////////////////
@@ -53,7 +54,9 @@
   
   // Put your answer below -------------------------
   
-  
+  setTimeout(function() {
+    alert('Hello, World!')
+}, 2000);
   // -----------------------------------------------
   
   //////////////////////////////////////////////////
@@ -83,6 +86,7 @@
   
   // Put your answer below -------------------------
   
+  // It would be z and y because of the setTimeout method
   
   // -----------------------------------------------
   
@@ -105,7 +109,9 @@
   
   // Put your answer below -------------------------
   
-  
+  const reverseStr = function(str) {
+    return str.split('').reverse().join('');
+  };
   
   // -----------------------------------------------
   
@@ -139,7 +145,13 @@
   };
   
   // Put your answer below -------------------------
-  
+  const colors = {
+    rojo: "ff0000",
+    blanco: "#ffffff",
+    azul: "#0000ff",
+    verde: "#00ff00",
+    negro: "#000000"
+  }
   
   
   // -----------------------------------------------
@@ -155,9 +167,12 @@
   // assignment are happening on 2 seperate lines.
   
   var foo = "bar";
+
+  
   
   // Put your answer below -------------------------
-  
+    let foo; 
+    foo = "bar";
   
   // -----------------------------------------------
   
@@ -181,8 +196,10 @@
   // callTenTime(functionName);
   
   // Put your answer below -------------------------
-  
-  
+   
+  function callNtimes(callback, num) {
+    var range = Array(10)
+  }
   // -----------------------------------------------
   
   //////////////////////////////////////////////////
@@ -210,7 +227,7 @@
   
   // Put your answer below -------------------------
   
-  
+  //Wrap the code in a immediately invoked function expression (I.I.F.E)
   
   // -----------------------------------------------
   
@@ -231,6 +248,7 @@
   
   // Put your answer below -------------------------
   
+  // should be return except console.log
   
   
   // -----------------------------------------------
@@ -258,6 +276,15 @@
   
   // Put your answer below -------------------------
   
+  //Amount is undefined. That plus zero is NaN.//
+  
+  // function acc (amount = 1)
+  // if(amount === undefined){
+    //speed += 1;//
+    //else {
+      //speed += amount//
+    //}
+    
   
   
   // -----------------------------------------------
