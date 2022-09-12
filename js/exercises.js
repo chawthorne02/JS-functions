@@ -42,6 +42,7 @@
     else {
         return false;
     }
+
 };
 
     
@@ -91,7 +92,7 @@
         let result = 0;
         for (const num of arr) {
             result = result + num;
-            console.log(result);
+            // console.log(result);
         } 
         return result;
     }
@@ -100,7 +101,7 @@
         let result = 1;
         for (const num of arr) {
             result = result * num;
-            console.log(result);
+            // console.log(result);
         } 
         return result;
 
@@ -111,8 +112,8 @@
     // ---------------------
   
     function reverse(str) {
-        let splitString = str.split();
-        reverseArray = splitString.reverse();
+        let splitString = str.split('');
+        let reverseArray = splitString.reverse();
         let joinArray = reverseArray.join("");
         
         return joinArray
@@ -127,7 +128,7 @@
 
     function findLongestWord(arr) {
         let word = "";
-        for (i = 0; i < arr.length; i++) {
+        for (let i = 0; i < arr.length; i++) {
             if (word.length < arr[i].length){
                 word = arr[i];
             }
@@ -141,7 +142,7 @@
     // Define a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
     // ---------------------
   
-    function filterLongestWord(arr, j) {
+    function filterLongWords(arr, i) {
         const result  = [];
 
         for (let j = 0; j < arr.length; j++) {
@@ -171,7 +172,7 @@
     }
     return freqList;
 }
-    }
+    
   
     ////////////////////////////////////////////////////////////////////////
     /////////////////////////DO NOT CHANGE CODE BELOW///////////////////////

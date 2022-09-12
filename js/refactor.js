@@ -152,6 +152,10 @@
     verde: "#00ff00",
     negro: "#000000"
   }
+
+  function spanishColor(colorName) {
+    return colors[colorName];
+  }
   
   
   // -----------------------------------------------
@@ -198,7 +202,9 @@
   // Put your answer below -------------------------
    
   function callNtimes(callback, num) {
-    var range = Array(10)
+    // var range = Array(10)
+    var range = Array.from(Array(num).keys());
+    range.forEach(callback);
   }
   // -----------------------------------------------
   
@@ -228,6 +234,18 @@
   // Put your answer below -------------------------
   
   //Wrap the code in a immediately invoked function expression (I.I.F.E)
+
+  (function(){
+    var score = 0;
+  
+    var increaseScore = function() {
+      score++;
+    };
+    
+    var decreaseScore = function() {
+      score--;
+    };
+  })();
   
   // -----------------------------------------------
   
@@ -249,6 +267,10 @@
   // Put your answer below -------------------------
   
   // should be return except console.log
+
+  var addNumbers = function(numberA, numberB) {
+    return numberA + numberB;
+  };
   
   
   // -----------------------------------------------
@@ -278,12 +300,16 @@
   
   //Amount is undefined. That plus zero is NaN.//
   
-  // function acc (amount = 1)
+  // function acc (amount)
   // if(amount === undefined){
     //speed += 1;//
     //else {
       //speed += amount//
     //}
+
+    function acc(amount = 1) {
+      speed += 1;
+    }
     
   
   
